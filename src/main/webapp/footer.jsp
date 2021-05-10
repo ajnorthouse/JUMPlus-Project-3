@@ -3,11 +3,11 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Sign Out</title>
+	<title>Insert title here</title>
 </head>
 <body>
-	<div class="sign-out">
-		<h1>Sign Out Page</h1>
-	</div>
+	<p>Copyright Me bich</p>
+	
+	
 </body>
 </html>

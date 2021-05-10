@@ -3,11 +3,13 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Sign Out</title>
+	<title>Insert title here</title>
 </head>
 <body>
-	<div class="sign-out">
-		<h1>Sign Out Page</h1>
-	</div>
+	<p>Welcome to DollarsBank!</p>
+	<p>Email</p>
+	<p>Cellphone</p>
+	
+	
 </body>
 </html>
