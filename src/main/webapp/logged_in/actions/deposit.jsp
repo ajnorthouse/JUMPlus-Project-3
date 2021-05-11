@@ -6,7 +6,9 @@
 	<title>Deposit Funds</title>
 </head>
 <body>
-	<div class="deposit">
+	<%@ include file="../account-header.jsp" %>
+	<%@ include file="../account-navbar.jsp" %>
+	<main class="deposit">
 		<h1>Deposit Page</h1>
 
 		<form method="POST">
@@ -15,12 +17,15 @@
 			<div class="currency-input">
 				<input type="number" id="deposit-input" name="deposit-input"
 					placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
-					value={deposit}>
+					value="${requestScope.deposit}">
+					
+			
 			</div>
 			
 			<button type="submit">Submit</button>
 		</form>
-		{result}
-	</div>
+		<%@ include file="../../result.jsp" %>
+	</main>
+	<%@ include file="../../footer.jsp" %>
 </body>
 </html>

@@ -1,13 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="ISO-8859-1">
-	<title>Insert title here</title>
-</head>
-<body>
-	<p>Copyright Me bich</p>
-	
-	
-</body>
-</html>
+<footer>
+	<p>Author: Alexandré Northouse<br>
+	<a href="mailto:alex.j.northouse@gmail.com">alex.j.northouse@gmail.com</a></p>
+</footer>

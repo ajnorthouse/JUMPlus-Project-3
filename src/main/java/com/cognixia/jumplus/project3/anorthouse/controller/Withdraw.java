@@ -21,7 +21,12 @@ public class Withdraw extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		//collect info from JSP
+		var withdrawal = Double.parseDouble(request.getParameter("withdrawl-input"));
+		
+		//returns attributes
+		request.setAttribute("withdrawal", withdrawal);
+		
 		doGet(request, response);
 	}
 

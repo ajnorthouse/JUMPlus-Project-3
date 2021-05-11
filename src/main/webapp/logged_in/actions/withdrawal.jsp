@@ -6,7 +6,9 @@
 	<title>Withdraw Funds</title>
 </head>
 <body>
-	<div class="withdraw">
+	<%@ include file="../account-header.jsp" %>
+	<%@ include file="../account-navbar.jsp" %>
+	<main class="withdraw">
 		<h1>Withdrawal Page</h1>
 		
 		<form method="POST">
@@ -15,12 +17,13 @@
 			<div class="currency-input">
 				<input type="number" id="withdrawl-input" name="withdrawl-input" 
 					placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
-					value={withdrawl}>
+					value="${requestScope.withdrawal}">
 			</div>
 			
 			<button type="submit">Submit</button>
 		</form>
-		{result}
-	</div>
+		<%@ include file="../../result.jsp" %>
+	</main>
+	<%@ include file="../../footer.jsp" %>
 </body>
 </html>

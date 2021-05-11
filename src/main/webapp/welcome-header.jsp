@@ -1,15 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="ISO-8859-1">
-	<title>Insert title here</title>
-</head>
-<body>
-	<p>Welcome to DollarsBank!</p>
-	<p>Email</p>
-	<p>Cellphone</p>
-	
-	
-</body>
-</html>
+<header>
+	<h1><a href="<%= request.getContextPath()%>/">DollarsBank Web App</a></h1>
+	<p>Inspiring Banking since, like, at least 2000.</p>
+</header>
