@@ -42,8 +42,9 @@
 			title="Password with minimum 8 characters, one number, one special character, one uppercase letter, and one lowercase letter."
 			value={password2}>
 		
+		
+		<p>Your Password Must Contain:</p>
 		<ul>
-			<p>Your Password Must Contain:</p>
 			<li>Eight total characters</li>
 			<li>One uppercase letter</li>
 			<li>One lowercase letter</li>
