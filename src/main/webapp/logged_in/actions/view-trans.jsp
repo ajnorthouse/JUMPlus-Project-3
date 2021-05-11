@@ -8,7 +8,7 @@
 <body>
 	<%@ include file="../account-header.jsp" %>
 	<%@ include file="../account-navbar.jsp" %>
-	<div class="recent_transactions">
+	<main class="recent_transactions">
 		<h1>Recent Transactions Page</h1>
 
 		<div class="transaction-entry" key={"Entry " + counter}>
@@ -31,7 +31,7 @@
 			<h2>{log[counter][0]}</h2>
 			<p>{log[counter][1]}</p>
 		</div>
-	</div>
+	</main>
 	<%@ include file="../../footer.jsp" %>
 </body>
 </html>

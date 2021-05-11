@@ -8,7 +8,7 @@
 <body>
 	<%@ include file="../account-header.jsp" %>
 	<%@ include file="../account-navbar.jsp" %>
-	<div class="recent_transactions">
+	<main class="recent_transactions">
 		<h1>Account Details:</h1>
 		<div class="username">
 			<h2>Username:</h2>
@@ -39,7 +39,7 @@
 			<h2>Total Transactions:</h2>
 			<p>{props.login.log.length - 1}</p>
 		</div>
-	</div>
+	</main>
 	<%@ include file="../../footer.jsp" %>
 </body>
 </html>

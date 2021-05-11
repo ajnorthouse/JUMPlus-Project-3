@@ -55,7 +55,7 @@
 			
 			<button type="submit">Submit</button>
 		</form>
-		{result}
+		<%@ include file="result.jsp" %>
 	</div>
 	<%@ include file="footer.jsp" %>
 </body>

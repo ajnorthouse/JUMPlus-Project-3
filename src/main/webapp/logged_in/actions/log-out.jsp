@@ -6,8 +6,8 @@
 	<title>Sign Out</title>
 </head>
 <body>
-	<div class="sign-out">
+	<main class="sign-out">
 		<h1>Sign Out Page</h1>
-	</div>
+	</main>
 </body>
 </html>

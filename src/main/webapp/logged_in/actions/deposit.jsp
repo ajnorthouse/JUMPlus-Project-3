@@ -8,7 +8,7 @@
 <body>
 	<%@ include file="../account-header.jsp" %>
 	<%@ include file="../account-navbar.jsp" %>
-	<div class="deposit">
+	<main class="deposit">
 		<h1>Deposit Page</h1>
 
 		<form method="POST">
@@ -22,8 +22,8 @@
 			
 			<button type="submit">Submit</button>
 		</form>
-		{result}
-	</div>
+		<%@ include file="../../result.jsp" %>
+	</main>
 	<%@ include file="../../footer.jsp" %>
 </body>
 </html>
