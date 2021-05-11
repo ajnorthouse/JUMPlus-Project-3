@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
@@ -10,27 +11,9 @@
 	<%@ include file="../account-navbar.jsp" %>
 	<main class="recent_transactions">
 		<h1>Recent Transactions Page</h1>
-
-		<div class="transaction-entry" key={"Entry " + counter}>
-			<h2>{log[counter][0]}</h2>
-			<p>{log[counter][1]}</p>
-		</div>
-		<div class="transaction-entry" key={"Entry " + counter}>
-			<h2>{log[counter][0]}</h2>
-			<p>{log[counter][1]}</p>
-		</div>
-		<div class="transaction-entry" key={"Entry " + counter}>
-			<h2>{log[counter][0]}</h2>
-			<p>{log[counter][1]}</p>
-		</div>
-		<div class="transaction-entry" key={"Entry " + counter}>
-			<h2>{log[counter][0]}</h2>
-			<p>{log[counter][1]}</p>
-		</div>
-		<div class="transaction-entry" key={"Entry " + counter}>
-			<h2>{log[counter][0]}</h2>
-			<p>{log[counter][1]}</p>
-		</div>
+		
+		${param.transactions}
+		
 	</main>
 	<%@ include file="../../footer.jsp" %>
 </body>

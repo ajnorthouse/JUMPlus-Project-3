@@ -17,7 +17,7 @@
 			<div class="currency-input">
 				<input type="number" id="withdrawl-input" name="withdrawl-input" 
 					placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
-					value={withdrawl}>
+					value="${requestScope.withdrawal}">
 			</div>
 			
 			<button type="submit">Submit</button>

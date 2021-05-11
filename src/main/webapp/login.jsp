@@ -12,16 +12,16 @@
 		
 		<form method="POST">
 		
-			<label for="userId-input">User Id:</label>
-			<input type="text" id="userId-input" name="userId-input"
+			<label for="username-input">User Id:</label>
+			<input type="text" id="username-input" name="username-input"
 				placeholder="jsmith" title="username"
-				value={userId}>
+				value="${requestScope.username}">
 	
 			<label for="password-input">Password:</label>
 			<input type="password" id="password-input" name="password-input"
 				title="Password with minimum 8 characters, one number, one special character, one uppercase letter, and one lowercase letter."
 				placeholder="P@ssw0rd"
-				value={password}>
+				value="${requestScope.password}">
 			
 			<button type="submit">Submit</button>
 		</form>

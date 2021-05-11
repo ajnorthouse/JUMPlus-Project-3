@@ -15,26 +15,26 @@
 			<label for="name-input">Name:</label>
 			<input type="text" id="name-input" name="name-input" 
 				placeholder="John Smith" title="First name followed by Last name"
-				value={name}>
+				value="${requestScope.name}">
 			
 			<label for="contactNumber-input">Contact Number:</label>
 			<input type="tel" id="contactNumber-input" name="contactNumber-input" 
 				title="Phone Number with Area code, dashes between each set of numbers"
-				placeholder="123-456-7890" value={contactNumber}>
+				placeholder="123-456-7890" value="${requestScope.contactNum}">
 	
-			<label for="userId-input">User Id: </label>
-			<input type="text" id="userId-input" name="userId-input"
+			<label for="username-input">User Id: </label>
+			<input type="text" id="username-input" name="username-input"
 				placeholder="jsmith" title="username"
-				value={userId}>
+				value="${requestScope.username}">
 	
 			<label for="password-input1">Password: </label>
 			<input type="text" id="password-input1" name="password-input1"
 				title="Password with minimum 8 characters, one number, one special character, one uppercase letter, and one lowercase letter."
-				placeholder="P@ssw0rd" value={password1}>
+				placeholder="P@ssw0rd" value="${requestScope.password1}">
 			
 			<input type="text" id="password-input2" name="password-input2" 
 				title="Password with minimum 8 characters, one number, one special character, one uppercase letter, and one lowercase letter."
-				placeholder="P@ssw0rd" value={password2}>
+				placeholder="P@ssw0rd" value="${requestScope.password2}">
 			
 			<p>Your Password Must Contain:</p>
 			<ul>
@@ -49,7 +49,7 @@
 				<div class="currency-input">
 					<input type="number" id="balance-input" name="balance-input" 
 					placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
-					value={balance}>
+					value="${requestScope.balance}">
 				</div>
 			<br/>
 			
