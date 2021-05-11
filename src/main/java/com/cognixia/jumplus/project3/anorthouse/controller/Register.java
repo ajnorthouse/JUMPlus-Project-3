@@ -21,7 +21,22 @@ public class Register extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		//collect info from jsp
+		var name = request.getParameter("name-input");
+		var contactNum = request.getParameter("contactNumber-input");
+		var username = request.getParameter("username-input");
+		var password1 = request.getParameter("password-input1");
+		var password2 = request.getParameter("password-input2");
+		var balance = Double.parseDouble(request.getParameter("balance-input"));
+
+		//returns attributes
+		request.setAttribute("name", name);
+		request.setAttribute("contactNum", contactNum);
+		request.setAttribute("username", username);
+		request.setAttribute("password1", password1);
+		request.setAttribute("password2", password2);
+		request.setAttribute("balance", balance);
+		
 		doGet(request, response);
 	}
 

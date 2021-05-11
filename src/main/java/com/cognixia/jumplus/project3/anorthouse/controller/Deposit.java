@@ -21,7 +21,12 @@ public class Deposit extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		//collect info from JSP
+		var deposit = Double.parseDouble(request.getParameter("deposit-input"));
+		
+		//returns attributes
+		request.setAttribute("deposit", deposit);
+		
 		doGet(request, response);
 	}
 

@@ -21,7 +21,14 @@ public class Transfer extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		//collect info from JSP
+		var transfer = Double.parseDouble(request.getParameter("transfer-input"));
+		var recepient = request.getParameter("recepient-input");
+		
+		//returns attributes
+		request.setAttribute("transfer", transfer);
+		request.setAttribute("recepient", recepient);
+		
 		doGet(request, response);
 	}
 
