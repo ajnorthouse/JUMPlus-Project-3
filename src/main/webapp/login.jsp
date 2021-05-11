@@ -6,8 +6,9 @@
 	<title>Sign in</title>
 </head>
 <body>
+	<%@ include file="welcome-header.jsp" %>
 	<div class="login">
-		<h1>Login Page</h1>
+		<h2>Login Page</h2>
 		
 		<form method="POST">
 		
@@ -26,5 +27,6 @@
 		</form>
 		{result}
 	</div>
+	<%@ include file="footer.jsp" %>
 </body>
 </html>

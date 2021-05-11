@@ -6,8 +6,9 @@
 	<title>Register Account</title>
 </head>
 <body>
+	<%@ include file="welcome-header.jsp" %>
 	<div class="create-account">
-		<h1>Create Account</h1>
+		<h2>Create Account</h2>
 		
 		<form method="POST">
 		
@@ -56,5 +57,6 @@
 		</form>
 		{result}
 	</div>
+	<%@ include file="footer.jsp" %>
 </body>
 </html>

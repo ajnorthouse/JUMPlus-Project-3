@@ -6,11 +6,13 @@
 	<title>Welcome!</title>
 </head>
 <body>
+	<%@ include file="welcome-header.jsp" %>
 	<div class="welcome">
-		<h1>Welcome Page</h1>
+		<h2>Welcome Page</h2>
 		<a href="<%= request.getContextPath()%>/sign-in">Sign-In</a>
 		<a href="<%= request.getContextPath()%>/sign-up">Create Account</a>
 		<br/>
 	</div>
+	<%@ include file="footer.jsp" %>
 </body>
 </html>
