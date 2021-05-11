@@ -8,17 +8,17 @@
 <body>
 	<div class="withdraw">
 		<h1>Withdrawal Page</h1>
-		<form>
-		<label for="withdrawl-input">Withdrawal Amount:</label>
-		<div class="currency-input">
-			<input type="number" id="withdrawl-input" name="withdrawl-input" 
-				placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
-				value={withdrawl}>
-		</div>
 		
-		<br/>
+		<form method="POST">
 		
-		<button type="submit" onClick={handleSubmit}>Submit</button>
+			<label for="withdrawl-input">Withdrawal Amount:</label>
+			<div class="currency-input">
+				<input type="number" id="withdrawl-input" name="withdrawl-input" 
+					placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
+					value={withdrawl}>
+			</div>
+			
+			<button type="submit">Submit</button>
 		</form>
 		{result}
 	</div>

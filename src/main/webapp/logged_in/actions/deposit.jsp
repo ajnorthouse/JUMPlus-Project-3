@@ -8,16 +8,17 @@
 <body>
 	<div class="deposit">
 		<h1>Deposit Page</h1>
-		<form>
+
+		<form method="POST">
+		
 			<label for="deposit-input">Deposit Amount:</label>
 			<div class="currency-input">
 				<input type="number" id="deposit-input" name="deposit-input"
-				placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
-				value={deposit}>
+					placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
+					value={deposit}>
 			</div>
-			<br/>
 			
-			<button type="submit" onClick={handleSubmit}>Submit</button>
+			<button type="submit">Submit</button>
 		</form>
 		{result}
 	</div>

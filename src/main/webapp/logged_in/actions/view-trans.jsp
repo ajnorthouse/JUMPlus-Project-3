@@ -10,24 +10,24 @@
 		<h1>Recent Transactions Page</h1>
 
 		<div class="transaction-entry" key={"Entry " + counter}>
-		<h2>{log[counter][0]}</h2>
-		<p>{log[counter][1]}</p>
+			<h2>{log[counter][0]}</h2>
+			<p>{log[counter][1]}</p>
 		</div>
 		<div class="transaction-entry" key={"Entry " + counter}>
-		<h2>{log[counter][0]}</h2>
-		<p>{log[counter][1]}</p>
+			<h2>{log[counter][0]}</h2>
+			<p>{log[counter][1]}</p>
 		</div>
 		<div class="transaction-entry" key={"Entry " + counter}>
-		<h2>{log[counter][0]}</h2>
-		<p>{log[counter][1]}</p>
+			<h2>{log[counter][0]}</h2>
+			<p>{log[counter][1]}</p>
 		</div>
 		<div class="transaction-entry" key={"Entry " + counter}>
-		<h2>{log[counter][0]}</h2>
-		<p>{log[counter][1]}</p>
+			<h2>{log[counter][0]}</h2>
+			<p>{log[counter][1]}</p>
 		</div>
 		<div class="transaction-entry" key={"Entry " + counter}>
-		<h2>{log[counter][0]}</h2>
-		<p>{log[counter][1]}</p>
+			<h2>{log[counter][0]}</h2>
+			<p>{log[counter][1]}</p>
 		</div>
 	</div>
 </body>

@@ -8,13 +8,13 @@
 <body>
 	<div class="login">
 		<h1>Login Page</h1>
+		
 		<form method="POST">
+		
 			<label for="userId-input">User Id:</label>
 			<input type="text" id="userId-input" name="userId-input"
-					placeholder="jsmith" title="username"
+				placeholder="jsmith" title="username"
 				value={userId}>
-			
-			<br/>
 	
 			<label for="password-input">Password:</label>
 			<input type="password" id="password-input" name="password-input"
@@ -22,9 +22,7 @@
 				placeholder="P@ssw0rd"
 				value={password}>
 			
-			<br/>
-			
-			<button type="submit" onClick={handleSubmit}>Submit</button>
+			<button type="submit">Submit</button>
 		</form>
 		{result}
 	</div>

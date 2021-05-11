@@ -8,24 +8,22 @@
 <body>
 	<div class="transfer-funds">
 		<h1>Transfer Funds</h1>
-		<form>
-		<label for="transfer-input">Transfer Amount:</label>
 		
-		<div class="currency-input">
-			<input type="number" id="transfer-input" name="transfer-input"
-			placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
-			value={transfer}>
-		</div>
-		<br/>
-
-		<label for="recepient-input">Transfer Recipient:</label>
-		<input type="text" id="recepient-input" name="recepient-input"
+		<form method="POST">
+		
+			<label for="transfer-input">Transfer Amount:</label>
+			<div class="currency-input">
+				<input type="number" id="transfer-input" name="transfer-input"
+					placeholder="0.01" title="Dollar.Cent amount" min=".01" step=".01"
+					value={transfer}>
+			</div>
+	
+			<label for="recepient-input">Transfer Recipient:</label>
+			<input type="text" id="recepient-input" name="recepient-input"
 				placeholder="jsmith" title="Username of recepient"
-			value={recepient}>
-		
-		<br/>
-		
-		<button type="submit" onClick={handleSubmit}>Submit</button>
+				value={recepient}>
+			
+			<button type="submit">Submit</button>
 		</form>
 		{result}
 	</div>
