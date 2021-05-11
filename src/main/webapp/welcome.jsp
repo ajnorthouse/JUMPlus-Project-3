@@ -8,8 +8,8 @@
 <body>
 	<div class="welcome">
 		<h1>Welcome Page</h1>
-		<a href="<%= request.getContextPath()%>/Login">Sign-In</a>
-		<a href="<%= request.getContextPath()%>/CreateAccount">Create Account</a>
+		<a href="<%= request.getContextPath()%>/sign-in">Sign-In</a>
+		<a href="<%= request.getContextPath()%>/sign-up">Create Account</a>
 		<br/>
 	</div>
 </body>
