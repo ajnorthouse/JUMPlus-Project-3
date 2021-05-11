@@ -4,5 +4,5 @@
 	<a href="<%= request.getContextPath()%>/account/transfer">Transfer Funds</a>
 	<a href="<%= request.getContextPath()%>/account/transactions">View Recent Transactions</a>
 	<a href="<%= request.getContextPath()%>/account/info">View Account Details</a>
-	<a href="<%= request.getContextPath()%>/sign-out">Sign out</a>
+	<a href="<%= request.getContextPath()%>/account/sign-out">Sign out</a>
 </nav>
