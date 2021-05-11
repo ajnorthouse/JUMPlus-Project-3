@@ -6,6 +6,8 @@
 	<title>Account Details</title>
 </head>
 <body>
+	<%@ include file="../account-header.jsp" %>
+	<%@ include file="../account-navbar.jsp" %>
 	<div class="recent_transactions">
 		<h1>Account Details:</h1>
 		<div class="username">
@@ -38,5 +40,6 @@
 			<p>{props.login.log.length - 1}</p>
 		</div>
 	</div>
+	<%@ include file="../../footer.jsp" %>
 </body>
 </html>

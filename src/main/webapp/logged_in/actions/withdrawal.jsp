@@ -6,6 +6,8 @@
 	<title>Withdraw Funds</title>
 </head>
 <body>
+	<%@ include file="../account-header.jsp" %>
+	<%@ include file="../account-navbar.jsp" %>
 	<div class="withdraw">
 		<h1>Withdrawal Page</h1>
 		
@@ -22,5 +24,6 @@
 		</form>
 		{result}
 	</div>
+	<%@ include file="../../footer.jsp" %>
 </body>
 </html>
