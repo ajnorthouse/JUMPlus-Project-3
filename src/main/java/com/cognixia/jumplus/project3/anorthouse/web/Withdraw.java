@@ -1,4 +1,4 @@
-package com.cognixia.jumplus.project3.anorthouse.controller;
+package com.cognixia.jumplus.project3.anorthouse.web;
 
 import java.io.IOException;
 
@@ -8,26 +8,24 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class Transfer extends HttpServlet {
+public class Withdraw extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public Transfer() {
+    public Withdraw() {
         // TODO Auto-generated constructor stub
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/logged_in/actions/transfer.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/logged_in/actions/withdrawal.jsp");
 		dispatcher.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//collect info from JSP
-		var transfer = Double.parseDouble(request.getParameter("transfer-input"));
-		var recepient = request.getParameter("recepient-input");
+		var withdrawal = Double.parseDouble(request.getParameter("withdrawl-input"));
 		
 		//returns attributes
-		request.setAttribute("transfer", transfer);
-		request.setAttribute("recepient", recepient);
+		request.setAttribute("withdrawal", withdrawal);
 		
 		doGet(request, response);
 	}

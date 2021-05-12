@@ -1,4 +1,4 @@
-package com.cognixia.jumplus.project3.anorthouse.controller;
+package com.cognixia.jumplus.project3.anorthouse.web;
 
 import java.io.IOException;
 
