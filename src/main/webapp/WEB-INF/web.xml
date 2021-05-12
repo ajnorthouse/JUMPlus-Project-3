@@ -9,40 +9,36 @@
 	
 	<!-- === Servlet Declarations === -->
 	<servlet>
-		<servlet-name>TestClass</servlet-name>
-		<servlet-class>com.cognixia.jumplus.project3.anorthouse.TestClass</servlet-class>
-	</servlet>
-	<servlet>
 		<servlet-name>Login</servlet-name>
-		<servlet-class>com.cognixia.jumplus.project3.anorthouse.controller.Login</servlet-class>
+		<servlet-class>com.cognixia.jumplus.project3.anorthouse.web.Login</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>Register</servlet-name>
-		<servlet-class>com.cognixia.jumplus.project3.anorthouse.controller.Register</servlet-class>
+		<servlet-class>com.cognixia.jumplus.project3.anorthouse.web.Register</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>LogOut</servlet-name>
-		<servlet-class>com.cognixia.jumplus.project3.anorthouse.controller.LogOut</servlet-class>
+		<servlet-class>com.cognixia.jumplus.project3.anorthouse.web.LogOut</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>Deposit</servlet-name>
-		<servlet-class>com.cognixia.jumplus.project3.anorthouse.controller.Deposit</servlet-class>
+		<servlet-class>com.cognixia.jumplus.project3.anorthouse.web.Deposit</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>Withdraw</servlet-name>
-		<servlet-class>com.cognixia.jumplus.project3.anorthouse.controller.Withdraw</servlet-class>
+		<servlet-class>com.cognixia.jumplus.project3.anorthouse.web.Withdraw</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>Transfer</servlet-name>
-		<servlet-class>com.cognixia.jumplus.project3.anorthouse.controller.Transfer</servlet-class>
+		<servlet-class>com.cognixia.jumplus.project3.anorthouse.web.Transfer</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>AccountInfo</servlet-name>
-		<servlet-class>com.cognixia.jumplus.project3.anorthouse.controller.AccountInfo</servlet-class>
+		<servlet-class>com.cognixia.jumplus.project3.anorthouse.web.AccountInfo</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>RecentTransactions</servlet-name>
-		<servlet-class>com.cognixia.jumplus.project3.anorthouse.controller.RecentTransactions</servlet-class>
+		<servlet-class>com.cognixia.jumplus.project3.anorthouse.web.RecentTransactions</servlet-class>
 	</servlet>
 	
 	
