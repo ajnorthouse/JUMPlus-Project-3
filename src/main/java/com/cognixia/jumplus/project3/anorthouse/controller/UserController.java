@@ -4,7 +4,7 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
-import com.cognixia.jumplus.project1.anorthouse.model.User;
+import com.cognixia.jumplus.project3.anorthouse.model.User;
 
 //TODO - JavaDoc description
 public class UserController {
