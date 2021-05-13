@@ -11,7 +11,7 @@ public class User {
 	private String name;
 	private String contactNumber;
 	private double balance;
-	private ArrayList<String> log;
+	private ArrayList<String[]> log;
 	
 	
 	// Constructors
@@ -32,7 +32,7 @@ public class User {
 		this.name = name;
 		this.contactNumber = contactNumber;
 		this.balance = balance;
-		this.log = new ArrayList<String>();
+		this.log = new ArrayList<String[]>();
 	}
 	
 	
@@ -58,7 +58,7 @@ public class User {
 	public double getBalance() {
 		return balance;
 	}
-	public ArrayList<String> getLog() {
+	public ArrayList<String[]> getLog() {
 		return log;
 	}
 	
@@ -79,7 +79,7 @@ public class User {
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
-	public void setLog(ArrayList<String> log) {
+	public void setLog(ArrayList<String[]> log) {
 		this.log = log;
 	}
 	
