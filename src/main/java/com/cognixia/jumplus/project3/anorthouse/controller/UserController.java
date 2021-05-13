@@ -73,11 +73,11 @@ public class UserController {
 
 	// log methods
 	//TODO - JavaDoc description
-	public ArrayList<String> getUserLog(User user) {
+	public ArrayList<String[]> getUserLog(User user) {
 		return user.getLog();
 	}
 	//TODO - JavaDoc description
-	public void setUserLog(User user, ArrayList<String> log) {
+	public void setUserLog(User user, ArrayList<String[]> log) {
 		user.setLog(log);
 	}
 	/**
@@ -92,8 +92,8 @@ public class UserController {
 		String date = (ZonedDateTime.now().format(formatter) + "\n");
 		
 		//gets log, adds new entry, then sets log
-		ArrayList<String> tempLog = user.getLog();
-		tempLog.add(date + message);
+		ArrayList<String[]> tempLog = user.getLog();
+		tempLog.add(new String[]{date, message});
 		user.setLog(tempLog);
 		return (date + message);
 	}
