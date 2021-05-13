@@ -44,10 +44,6 @@
 	
 	<!-- === Servlet Mappings === -->
 	<servlet-mapping>
-		<servlet-name>TestClass</servlet-name>
-		<url-pattern>/test</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
 		<servlet-name>Login</servlet-name>
 		<url-pattern>/sign-in</url-pattern>
 	</servlet-mapping>
@@ -83,6 +79,6 @@
 	
 	<!-- === Welcome Page === -->
 	<welcome-file-list>
-		<welcome-file>welcome.jsp</welcome-file>
+		<welcome-file>/WEB-INF/welcome.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>
