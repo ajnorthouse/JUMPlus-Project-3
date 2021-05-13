@@ -4,7 +4,7 @@ package com.cognixia.jumplus.project3.anorthouse.utility;
 public class InputParserUtil {
 
 	//TODO - JavaDoc description
-	public static int parseInt(String rawInput) throws Exception {
+	public static int parseInt(String rawInput, String inputName) throws Exception {
 		String tempString = rawInput;
 		int tempInt = 0;
 		
@@ -15,10 +15,12 @@ public class InputParserUtil {
 
 			//then checks for non-negative
 			if (tempInt < 0) {
-				throw new Exception("The number can't be negative!");
+				throw new Exception("The " + inputName + " can't be negative!");
 			}
 		//throws generic exception to allow for caller to handle issue
-		} catch (Exception e) {
+		} catch (NumberFormatException e) {
+			throw new Exception("The " + inputName + " can't empty!");
+		}catch (Exception e) {
 			throw e;
 		}
 		
@@ -28,7 +30,7 @@ public class InputParserUtil {
 
 
 	//TODO - JavaDoc description
-	public static double parseDouble(String rawInput) throws Exception {
+	public static double parseDouble(String rawInput, String inputName) throws Exception {
 		String tempString = rawInput;
 		double tempDouble = 0.00;
 		
@@ -39,10 +41,12 @@ public class InputParserUtil {
 
 			//then checks for non=negative
 			if (tempDouble < 0.00) {
-				throw new Exception("The number can't be negative!");
+				throw new Exception("The " + inputName + " can't be negative!");
 			}
 		//throws generic exception to allow for caller to handle issue
-		} catch (Exception e) {
+		} catch (NumberFormatException e) {
+			throw new Exception("The " + inputName + " can't empty!");
+		}catch (Exception e) {
 			throw e;
 		}
 		
@@ -52,7 +56,7 @@ public class InputParserUtil {
 
 
 	//TODO - JavaDoc description
-	public static String parseString(String rawInput) throws Exception {
+	public static String parseString(String rawInput, String inputName) throws Exception {
 		String tempString = rawInput;
 		
 		try {
@@ -61,7 +65,7 @@ public class InputParserUtil {
 			
 			//checks for empty string
 			if (tempString.equals("")) {
-				throw new Exception();
+				throw new Exception("Your " + inputName + " is empty!");
 			}
 		//throws generic exception to allow for caller to handle issue
 		} catch (Exception e) {
@@ -74,8 +78,8 @@ public class InputParserUtil {
 	
 
 	//TODO - JavaDoc description
-	public static String parseUsername(String rawInput) throws Exception {
-		rawInput = parseString(rawInput);
+	public static String parseUsername(String rawInput, String inputName) throws Exception {
+		rawInput = parseString(rawInput, inputName);
 		return rawInput.toLowerCase();
 	}
 	
