@@ -44,7 +44,6 @@ public class Transfer extends HttpServlet {
 		var transferDouble = 0.00;
 		var keepRunning = true;
 		
-		
 		//first tries to clean and check inputs
 		try {
 			recipient = parseUsername(recipient, "transfer recipient");
