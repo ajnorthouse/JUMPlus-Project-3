@@ -100,7 +100,7 @@ public class DollarsBankController {
 			}
 			
 			//returns false if no matching userIds were found
-			if (counter - 1 == users.size()) {
+			if (counter == users.size() - 1) {
 				throw new Exception("Username not found!");
 			}
 		}
