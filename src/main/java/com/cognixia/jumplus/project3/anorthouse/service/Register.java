@@ -1,8 +1,8 @@
-package com.cognixia.jumplus.project3.anorthouse.web;
+package com.cognixia.jumplus.project3.anorthouse.service;
 
-import static com.cognixia.jumplus.project3.anorthouse.controller.DollarsBankController.createUser;
 import static com.cognixia.jumplus.project3.anorthouse.utility.InputParserUtil.parseString;
 import static com.cognixia.jumplus.project3.anorthouse.utility.InputParserUtil.parseUsername;
+import static com.cognixia.jumplus.project3.anorthouse.controller.DollarsBankController.createUser;
 import static com.cognixia.jumplus.project3.anorthouse.utility.InputParserUtil.parseDouble;
 import static com.cognixia.jumplus.project3.anorthouse.utility.RegexUtil.checkPassword;
 import static com.cognixia.jumplus.project3.anorthouse.utility.RegexUtil.checkContactNumber;
