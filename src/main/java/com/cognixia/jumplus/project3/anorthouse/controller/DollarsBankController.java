@@ -106,7 +106,6 @@ public class DollarsBankController {
 		}
 		
 		//subtracts withdrawal and then adds deposit
-		System.out.println(3);
 		transferWithdrawal(currentUser, uController.getUsername(tempUser), amount);
 		transferDeposit(tempUser, uController.getUsername(currentUser), amount);
 	}
