@@ -3,9 +3,10 @@ A reimplementation of [JUMPlus-Project-1](https://github.com/ajnorthouse/JUMPlus
 > "The project goal was to create a mock console application that a user could use to access a database (either external or in memory) to interact with their banking account. The main goals with this was to implement a MVC architecture, testing, and have the console print statements in color."
 
 ## Technologies used:
-- Java
-- Servlet
-- JSP
+- Java 16
+  - Servlets
+  - JSP
+- Apache Tomcat 10.0.2
 - HTML / CSS
 
 ## Objectives:
