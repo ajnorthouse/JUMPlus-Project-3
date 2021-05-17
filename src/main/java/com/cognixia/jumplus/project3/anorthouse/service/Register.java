@@ -95,7 +95,7 @@ public class Register extends HttpServlet {
 		
 		//finally redirects or displays errors.
 		if (keepRunning) {
-			setResult(request, RESULT_CLASS.SUCCESS, "Added user '" + username + "'!");
+			setResult(request, RESULT_CLASS.SUCCESS, "Created user: " + username + "\nRedirecting to login...");
 			doGet(request, response);
 			
 		//failed login
