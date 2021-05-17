@@ -100,12 +100,13 @@ public class DollarsBankController {
 			}
 			
 			//returns false if no matching userIds were found
-			if (counter - 1 == users.size()) {
+			if (counter == users.size() - 1) {
 				throw new Exception("Username not found!");
 			}
 		}
 		
 		//subtracts withdrawal and then adds deposit
+		System.out.println(3);
 		transferWithdrawal(currentUser, uController.getUsername(tempUser), amount);
 		transferDeposit(tempUser, uController.getUsername(currentUser), amount);
 	}
