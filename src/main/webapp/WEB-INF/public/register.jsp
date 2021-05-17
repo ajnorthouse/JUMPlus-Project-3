@@ -61,7 +61,7 @@
 					value="${requestScope.balance}">
 				</div>
 			</section>
-			<%@ include file="result.jsp" %>
+			<%@ include file="success-redirect.jsp" %>
 			<button type="submit">Submit</button>
 		</form>
 	</main>
