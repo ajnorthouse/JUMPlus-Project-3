@@ -1,11 +1,9 @@
-package com.cognixia.jumplus.project3.anorthouse.web;
+package com.cognixia.jumplus.project3.anorthouse.service;
 
-import static com.cognixia.jumplus.project3.anorthouse.controller.DollarsBankController.attemptTransfer;
-import static com.cognixia.jumplus.project3.anorthouse.utility.InputParserUtil.parseUsername;
+import static com.cognixia.jumplus.project3.anorthouse.controller.DollarsBankController.subtractWithdrawal;
 import static com.cognixia.jumplus.project3.anorthouse.utility.InputParserUtil.parseDouble;
-import static com.cognixia.jumplus.project3.anorthouse.utility.RegexUtil.checkUsername;
-import static com.cognixia.jumplus.project3.anorthouse.utility.WebHelperUtil.checkBadLogin;
 import static com.cognixia.jumplus.project3.anorthouse.utility.WebHelperUtil.setResult;
+import static com.cognixia.jumplus.project3.anorthouse.utility.WebHelperUtil.checkBadLogin;
 
 import java.io.IOException;
 
@@ -18,7 +16,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class Transfer extends HttpServlet {
+public class Withdraw extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,7 +25,7 @@ public class Transfer extends HttpServlet {
 			return;
 		}
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/logged_in/transfer.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/logged_in/withdrawal.jsp");
 		dispatcher.forward(request, response);
 	}
 
@@ -37,29 +35,25 @@ public class Transfer extends HttpServlet {
 			return;
 		}
 		
-		
 		//collect info from JSP
-		var recipient = request.getParameter("recepient-input");
-		var transferString = request.getParameter("transfer-input");
-		var transferDouble = 0.00;
+		var withdrawalString = request.getParameter("withdrawl-input");
+		var withdrawalDouble = 0.00;
 		var keepRunning = true;
 		
-		//first tries to clean and check inputs
+		//first tries to clean inputs
 		try {
-			recipient = parseUsername(recipient, "transfer recipient");
-			transferDouble = parseDouble(transferString, "transfer amount");
-			checkUsername(recipient);
+			withdrawalDouble = parseDouble(withdrawalString, "withdrawal");
 		} catch (Exception e) {
 			keepRunning = false;
 			setResult(request, RESULT_CLASS.ERROR, e.getMessage());
 		}
 		
 		
-		//next tries to transfer the funds
+		//next tries to withdraw
 		if (keepRunning) {
 			User user = (User) request.getSession(false).getAttribute("current_user");
 			try {
-				attemptTransfer(user, recipient, transferDouble);
+				subtractWithdrawal(user, withdrawalDouble);
 			} catch (Exception e) {
 				keepRunning = false;
 				setResult(request, RESULT_CLASS.ERROR, e.getMessage());
@@ -69,15 +63,14 @@ public class Transfer extends HttpServlet {
 		
 		//finally displays the results.
 		if (keepRunning) {
-			setResult(request, RESULT_CLASS.SUCCESS, "Transferred $" + transferDouble + " to " + recipient + "!");
+			setResult(request, RESULT_CLASS.SUCCESS, "Withdrew $" + withdrawalDouble + "!");
 			doGet(request, response);
 			
 		//failed deposit
 		} else {
-			request.setAttribute("transfer", transferDouble);
-			request.setAttribute("recepient", recipient);
+			request.setAttribute("withdrawal", withdrawalDouble);
 			doGet(request, response);
 		}
 	}
-
+	
 }

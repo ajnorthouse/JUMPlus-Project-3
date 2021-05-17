@@ -1,11 +1,11 @@
-package com.cognixia.jumplus.project3.anorthouse.web;
+package com.cognixia.jumplus.project3.anorthouse.service;
 
 import java.io.IOException;
 
 import com.cognixia.jumplus.project3.anorthouse.utility.WebHelperUtil.RESULT_CLASS;
 
-import static com.cognixia.jumplus.project3.anorthouse.controller.DollarsBankController.attemptLogin;
 import static com.cognixia.jumplus.project3.anorthouse.utility.InputParserUtil.parseUsername;
+import static com.cognixia.jumplus.project3.anorthouse.controller.DollarsBankController.attemptLogin;
 import static com.cognixia.jumplus.project3.anorthouse.utility.InputParserUtil.parseString;
 import static com.cognixia.jumplus.project3.anorthouse.utility.RegexUtil.checkPassword;
 import static com.cognixia.jumplus.project3.anorthouse.utility.WebHelperUtil.setSessionUser;
